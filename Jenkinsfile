@@ -65,7 +65,7 @@ pipeline {
         }
             
         stage('Package') {
-            agent {label 'awsJenkinsAgent2'}
+            agent {label 'awsJenkinsAgent1'}
             steps {
                 // Get some code from a GitHub repository
                 git 'https://github.com/eebanja/DevOpsClassCodes.git'
